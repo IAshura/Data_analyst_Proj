@@ -125,11 +125,11 @@ season_counts = bike_day_df.groupby(by=["season", "yr"]).agg({
 }).reset_index()  
 
 # Menampilkan plot menggunakan Seaborn
-st.write("### Total number of bicycles rented by season")
+st.write("### season affect the total number of bicycle rentals")
 fig, ax = plt.subplots()
 sns.barplot(data=season_counts, x="season", y="cnt", hue="yr", palette=["blue", "green"], ax=ax)
 ax.set_ylabel("Jumlah")
-ax.set_title("Total number of bicycles rented by season")
+ax.set_title("season affect the total number of bicycle rentals")
 ax.legend(title="Tahun", loc="upper right")  
 plt.tight_layout()
 
