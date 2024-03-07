@@ -8,7 +8,7 @@ import streamlit as st
 sns.set(style='dark')
 
 #mengimport data
-all_data = pd.read_csv('https://raw.githubusercontent.com/Ashurinnn123/Data_Analyst_Dicoding/main/Submission/main_data.csv')
+all_data = pd.read_csv('https://raw.githubusercontent.com/IAshura/Data_analyst_Proj/main/main_data.csv')
 bike_day_df = pd.read_csv("Bike-sharing-dataset/day.csv")
 
 datetime_columns = ['date']
